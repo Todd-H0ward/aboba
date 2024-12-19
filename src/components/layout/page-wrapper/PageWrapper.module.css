@@ -1,0 +1,9 @@
+.wrapper {
+    height: 100%;
+    overflow-y: auto;
+    min-height: 100vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*overflow: hidden;*/
+    /*min-height: 100vh;*/
+}
