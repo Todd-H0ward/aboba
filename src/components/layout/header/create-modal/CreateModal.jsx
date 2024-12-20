@@ -31,10 +31,28 @@ export const CreateModal = ({ isOpen, onClose }) => {
           <Title>Создание заявки</Title>
 
           <Form layout="vertical" form={form} onFinish={onFinish}>
-            <Form.Item label="Краткое наименование" name="title">
+            <Form.Item
+              label="Краткое наименование"
+              name="title"
+              rules={[
+                {
+                  required: true,
+                  message: 'Введите краткое наименование',
+                },
+              ]}
+            >
               <Input />
             </Form.Item>
-            <Form.Item label="Заявитель" name="requester">
+            <Form.Item
+              label="Заявитель"
+              name="requester"
+              rules={[
+                {
+                  required: true,
+                  message: 'Укажите заявителя',
+                },
+              ]}
+            >
               <Input />
             </Form.Item>
             <Button htmlType="submit" type="primary" size="large">
